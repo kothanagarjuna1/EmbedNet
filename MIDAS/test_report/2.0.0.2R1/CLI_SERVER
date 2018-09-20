@@ -1,9 +1,0 @@
-Test CLI Server
-===============
-reboot device for changes to take effect
-device is rebooting
-change telnet port number
-can telnet to device after changing port number
-set inactivity timeout
-can telnet to device after inactivity timeout expired
-Test Case CLI Server PASSED
