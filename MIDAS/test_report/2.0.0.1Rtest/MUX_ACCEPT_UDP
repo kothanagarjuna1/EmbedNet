@@ -1,0 +1,58 @@
+Test MUX
+=========
+configure device
+Rebooting
+configuring device
+end of device configuration
+testing mux
+Test MUX UDP
+Test mux instance 1
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+Test mux instance 2
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+Test mux instance 3
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+Test mux instance 4
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+Test mux instance 5
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+Test mux instance 6
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+Test mux instance 7
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+Test mux instance 8
+out is 1
+mux udp is listening
+serial data is 1496KKK
+udp recv is 12
+vut received data
+result is 1
+MUX udp 8 instances TEST CASE PASSED

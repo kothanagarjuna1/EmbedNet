@@ -1,0 +1,23 @@
+Test MUX
+=========
+configure device
+Rebooting
+configuring device
+end of device configuration
+testing mux
+import xml to add tcpaes credential
+xml import completed.
+Test Mux instance 1
+serial opened
+test case 1: mux receive
+connect to remote host
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+W
+End Of File (EOF). Empty string style platform.
+<pexpect.fdpexpect.fdspawn object at 0x7fd942e34b50>
+result is None
+MUX tcpaes 8 instances TEST CASE FAILED

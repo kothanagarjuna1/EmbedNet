@@ -1,0 +1,150 @@
+#!/usr/local/bin/python3
+
+import serial
+import sys
+import time
+import os
+#import fdpexpect
+import pexpect.fdpexpect
+import pexpect
+import socket
+import shutil
+import subprocess
+import re
+import ssl
+
+print "Test TLS Tunnel 4k"
+print "==================="
+
+#syntax
+
+def script_usage():
+ print("Usage: " + os.path.basename(sys.argv[0]) + " <device_ip>" + " <device_serial_port> " + "<line>" + "<server>")
+ return
+
+if len(sys.argv) < 3:
+    script_usage()
+    sys.exit()
+
+device_ip = sys.argv[1]
+serial_port = sys.argv[2]
+line = sys.argv[3]
+server = sys.argv[4]
+
+def fileCompare():
+ file1 = open('5ktext.dat', 'r')
+ file2 = open('serialdata.txt', 'r')
+ result = 0
+ fread1 = file1.readlines()
+#print line1
+ fread2 = file2.readlines()
+#print line2
+ if (fread1 == fread2):
+  print ('file match.TLS tunnel TEST CASE PASSED')
+  result = 1
+ else:
+  print ('file different.TLS tunnel TEST FAILED')
+ return result
+
+ file1.close()
+ file2.close()
+
+
+def sendFile():
+ print "start tls server on ubuntu PC"
+ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+ ssl_sock = ssl.wrap_socket(s,
+                           ca_certs="cert.pem",
+                           cert_reqs=ssl.CERT_REQUIRED)
+ if server == '1':
+  ssl_sock.connect((device_ip,int(10006)))
+ else:
+  #try:
+   context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
+   context.load_cert_chain(certfile="cert.pem", keyfile="key.pem")
+   bindsocket = socket.socket()
+   bindsocket.bind(('192.168.51.177', 60001))
+   bindsocket.listen(5)
+   newsocket, fromaddr = bindsocket.accept()
+   sslsoc = context.wrap_socket(newsocket, server_side=True)
+   #request = sslsoc.read()
+   #print(request)
+  #except:
+   #continue
+ pexpect.run('rm serialdata.txt')
+ if line == '1':
+  ser = serial.Serial(serial_port,9600)
+ else:
+  ser = serial.Serial(serial_port,115200)
+ ser.close()
+ ser.open()
+ time.sleep(5)
+ if ser.isOpen():
+   pexpect.run('rm serialdata.txt')
+   print ('serial opened')
+   ser.flushInput()
+   ser.flushOutput()
+   f1 = open('5ktext.dat','r')
+   f = f1.read()
+    #z = bytearray(f.read())
+   #print "z",z
+  # while z:
+   if server == '1': 
+    ssl_sock.write(f)
+   else:
+    print "debug"
+    sslsoc.write(f) 
+   serdata = open('serialdata.txt','a')
+   seread = ser.read()
+   print "serial data",seread
+   serdata.write(seread)
+   serdata.close()
+   x = ser.inWaiting()
+   print (x)
+   for i in range (0,3):
+       if x != 0:
+        serdata= open('serialdata.txt','a')
+        seread = ser.read(ser.inWaiting())
+        time.sleep(5)
+        serdata.write(seread)
+        serdata.close()
+       else:
+        time.sleep(2)
+   print ("data sent through tunnel")
+ else:
+  print ('cannot open serial port')
+ f1.close()
+ ser.close()
+ #ser1.close()
+
+def device_config(serial_port):
+ print "import xml"
+ if line == '1' and server == '1':
+  tls = pexpect.run("curl --anyauth -u admin:PASSWORD http://"+device_ip+"/import/config -X POST --form  configrecord=@../tls.xml_server")
+ elif line == '1' and server == '0':
+   tls = pexpect.run("curl --anyauth -u admin:PASSWORD http://"+device_ip+"/import/config -X POST --form  configrecord=@../tls.xml_client")
+   print tls
+ elif line == 'host_cdc_acm' and server == '1':
+  tls = pexpect.run("curl --anyauth -u admin:PASSWORD http://"+device_ip+"/import/config -X POST --form  configrecord=@../tls.xml_hostacm")
+ time.sleep(15)
+ print 'xml import is',tls
+ #tls_res = re.search('XML import completed',tls)
+ #if tls_res:
+ print "tls import successful"
+ print "Reboot" 
+ pexpect.run("curl --anyauth -u admin:PASSWORD http://"+device_ip+"/action/status -X POST -d  "+'"'+  "group=Device&optionalGroupInstance&action=Reboot"+'"')
+ time.sleep(40)
+ sendFile()
+ fileCompare()
+# else:
+ #  print "failed to import xml"
+ sys.exit()   
+
+
+#main program 
+
+device_config(serial_port)
+
+sys.exit()
+
+#subprocess.call("python /home/LtrxEngr/check.py",shell = True)

@@ -1,0 +1,211 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE configrecord [
+   <!ELEMENT configrecord (configgroup+)>
+   <!ELEMENT configgroup (configitem+,configgroup*)>
+   <!ELEMENT configitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST configrecord version CDATA #IMPLIED>
+   <!ATTLIST configgroup name CDATA #IMPLIED>
+   <!ATTLIST configgroup instance CDATA #IMPLIED>
+   <!ATTLIST configitem name CDATA #IMPLIED>
+   <!ATTLIST configitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<configrecord version = "0.1.0.0T0">
+   <configgroup name = "tunnel connect" instance = "1">
+       <configitem name = "connect mode">
+           <value>Always</value>
+       </configitem>
+       <configitem name = "start character">
+           <value>&amp;#60;control&amp;#62;B</value>
+       </configitem>
+       <configitem name = "flush start character">
+           <value>enable</value>
+       </configitem>
+       <configitem name = "local port">
+           <value>&amp;#60;Random&amp;#62;</value>
+       </configitem>
+       <configitem name = "host" instance = "1">
+           <value name = "address">192.168.51.99</value>
+           <value name = "port">10002 </value>
+           <value name = "protocol">TCP AES</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key">11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11</value>
+           <value name = "aes decrypt key">11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11</value>
+       </configitem>
+       <configitem name = "host" instance = "2">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "3">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "4">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "5">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "6">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "7">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "8">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "9">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "10">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "11">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "12">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "13">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "14">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "15">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host" instance = "16">
+           <value name = "address"></value>
+           <value name = "port">&amp;#60;None&amp;#62;</value>
+           <value name = "protocol">TCP</value>
+           <value name = "ssh username"></value>
+           <value name = "validate certificate">enable</value>
+           <value name = "tcp keep alive">45000 milliseconds</value>
+           <value name = "aes encrypt key"></value>
+           <value name = "aes decrypt key"></value>
+       </configitem>
+       <configitem name = "host mode">
+           <value>Sequential</value>
+       </configitem>
+       <configitem name = "reconnect time">
+           <value>15000 milliseconds</value>
+       </configitem>
+       <configitem name = "flush serial">
+           <value>disable</value>
+       </configitem>
+       <configitem name = "block serial">
+           <value>disable</value>
+       </configitem>
+       <configitem name = "block network">
+           <value>disable</value>
+       </configitem>
+       <configitem name = "email connect">
+           <value>&amp;#60;None&amp;#62;</value>
+       </configitem>
+       <configitem name = "email disconnect">
+           <value>&amp;#60;None&amp;#62;</value>
+       </configitem>
+   </configgroup>
+</configrecord>

@@ -1,0 +1,19 @@
+Test Radio Trigger
+=================
+reboot device for changes to take effect
+device is rebooting
+radio mode is set to trigger
+radio is down as expected
+cannot connect to wlan profile in 2.4 ghz as expected when radio is down
+trigger radio
+check radio is up
+radio is up
+connect to wlan profile in 2.4 ghz
+wlan profile 2.4 ghz found in scan.
+connect to wlan profile in 5 ghz
+wlan profile 5ghz not found in scan
+retry
+wlan profile 5 ghz found in scan
+Radio Mode Trigger Test Case PASSED
+reboot device for changes to take effect
+device is rebooting

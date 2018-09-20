@@ -1,0 +1,142 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE configrecord [
+   <!ELEMENT configrecord (configgroup+)>
+   <!ELEMENT configgroup (configitem+)>
+   <!ELEMENT configitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST configrecord version CDATA #IMPLIED>
+   <!ATTLIST configgroup name CDATA #IMPLIED>
+   <!ATTLIST configgroup instance CDATA #IMPLIED>
+   <!ATTLIST configitem name CDATA #IMPLIED>
+   <!ATTLIST configitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<configrecord version = "0.1.0.1">
+   <configgroup name = "Power">
+      <configitem name = "Dynamic Power Mode">
+         <value>Standby</value>
+      </configitem>
+      <configitem name = "Time Powered Up">
+         <value>3 minute</value>
+      </configitem>
+      <configitem name = "Application" instance = "Command Line">
+         <value name = "State">Enabled</value>
+      </configitem>
+      <configitem name = "Application" instance = "HTTP Server">
+         <value name = "State">Disabled</value>
+      </configitem>
+      <configitem name = "Application" instance = "Tunnel Accept">
+         <value name = "State">Enabled</value>
+      </configitem>
+      <configitem name = "Application" instance = "Tunnel Connect">
+         <value name = "State">Enabled</value>
+      </configitem>
+      <configitem name = "WKUP Pin">
+         <value>Falling Edge</value>
+      </configitem>
+      <configitem name = "Maximum Time Powered Down">
+         <value>1 minute</value>
+      </configitem>
+      </configgroup>
+      <configgroup name = "Line" instance = "1">
+      <configitem name = "Name">
+         <value></value>
+      </configitem>
+      <configitem name = "Interface">
+         <value>RS232</value>
+      </configitem>
+      <configitem name = "State">
+         <value>Enabled</value>
+      </configitem>
+      <configitem name = "Protocol">
+         <value>Tunnel</value>
+      </configitem>
+      <configitem name = "Baud Rate">
+         <value>9600 bits per second</value>
+      </configitem>
+      <configitem name = "Parity">
+         <value>None</value>
+      </configitem>
+      <configitem name = "Data Bits">
+         <value>8</value>
+      </configitem>
+      <configitem name = "Stop Bits">
+         <value>1</value>
+      </configitem>
+      <configitem name = "Flow Control">
+         <value>Hardware</value>
+      </configitem>
+      <configitem name = "Gap Timer">
+         <value>&lt;Four Character Periods&gt;</value>
+      </configitem>
+      <configitem name = "Threshold">
+         <value>56 bytes</value>
+      </configitem>
+      <configitem name = "Push">
+         <value></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "Tunnel Accept" instance = "1">
+      <configitem name = "Mode">
+         <value>Always</value>
+      </configitem>
+      <configitem name = "Local Port">
+         <value>10001</value>
+      </configitem>
+      <configitem name = "Protocol">
+         <value>TCP</value>
+      </configitem>
+      <configitem name = "Flush Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Network">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Password">
+         <value></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "Tunnel Connect" instance = "1">
+      <configitem name = "Mode">
+         <value>Always</value>
+      </configitem>
+      <configitem name = "Local Port">
+         <value>&lt;Random&gt;</value>
+      </configitem>
+      <configitem name = "Host" instance = "1">
+         <value name = "Address">192.168.51.177</value>
+         <value name = "Port">50001</value>
+         <value name = "Protocol">TCP</value>
+         <value name = "Credential"></value>
+         <value name = "Initial Send"></value>
+         <value name = "Reception">Restricted</value>
+      </configitem>
+      <configitem name = "Host" instance = "2">
+         <value name = "Address"></value>
+         <value name = "Port">&lt;None&gt;</value>
+         <value name = "Protocol">TCP</value>
+         <value name = "Credential"></value>
+         <value name = "Initial Send"></value>
+         <value name = "Reception">Restricted</value>
+      </configitem>
+      <configitem name = "Connections">
+         <value>Sequential</value>
+      </configitem>
+      <configitem name = "Reconnect Time">
+         <value>15 seconds</value>
+      </configitem>
+      <configitem name = "Flush Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Network">
+         <value>Disabled</value>
+      </configitem>
+   </configgroup>
+</configrecord>

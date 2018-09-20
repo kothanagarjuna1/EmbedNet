@@ -1,0 +1,43 @@
+2018-07-27 16:08:46 	 Test Tunnel Connect Modes
+2018-07-27 16:08:46 	 =========================
+Traceback (most recent call last):
+  File "/home/lantronix/MIDAS/scripts/tunnelconnect.py", line 337, in <module>
+    main()
+  File "/home/lantronix/MIDAS/scripts/tunnelconnect.py", line 310, in main
+    device_config(remote_ip,'sequential')
+  File "/home/lantronix/MIDAS/scripts/tunnelconnect.py", line 231, in device_config
+    clientid.expect('status Device')
+  File "/usr/lib/python2.7/dist-packages/pexpect/spawnbase.py", line 315, in expect
+    timeout, searchwindowsize, async)
+  File "/usr/lib/python2.7/dist-packages/pexpect/spawnbase.py", line 339, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python2.7/dist-packages/pexpect/expect.py", line 102, in expect_loop
+    return self.eof(e)
+  File "/usr/lib/python2.7/dist-packages/pexpect/expect.py", line 49, in eof
+    raise EOF(msg)
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7f75e5934350>
+command: /usr/bin/telnet
+args: ['/usr/bin/telnet', '192.168.51.133']
+searcher: None
+buffer (last 100 chars): ''
+before (last 100 chars): '\r\n\r\ndevice\r\n\r\ntelnet: Unable to connect to remote host: No route to host\r\n'
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: 1
+flag_eof: True
+pid: 26288
+child_fd: 5
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1

@@ -1,0 +1,51 @@
+Test Tunnel Connect Modes
+=========================
+Rebooting
+line host_acm
+serial opened
+test tunnel sequential mode
+connected by ('192.168.51.161', 51111)
+sending from network
+serial data ser1 is ['abc']
+receving from network
+data is hela
+2nd TRY
+connected by ('192.168.51.161', 52757)
+sending from network
+serial data ser2 ['abc']
+receiving from network
+data1 is hela
+data sent and received from network
+result is 1
+Tunnel Connect Sequential Passed
+Rebooting
+line host_acm
+serial opened
+test tunnel simultaneous mode
+connected by ('192.168.51.161', 61291)
+connected by ('192.168.51.161', 50359)
+sending from network
+serial data ser1 ['abcabc']
+data is hela
+data1 is hela
+data sent and received from network
+result is 1
+Tunnel Connect Simultaneous Passed
+Rebooting
+line host_acm
+serial opened
+test tunnel round-robin mode
+connected by ('192.168.51.161', 50402)
+sending from network
+serial data ser2 ['abc']
+receiving from network
+data1 is hela
+2nd TRY
+connected by ('192.168.51.161', 58636)
+sending from network
+serial data ser1 ['abc']
+receiving from network
+data is hela
+data sent and received from network
+result is 1
+Tunnel Connect Round-Robin TEST CASE PASSED

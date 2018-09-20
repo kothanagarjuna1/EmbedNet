@@ -1,0 +1,57 @@
+Test MUX_TLS MUX_TCP_AES
+=========
+configure device
+end of device configuration
+testing tls and tcp aes mux
+upload xml in file system
+tls accept xml uploaded
+ftp closed
+print xml import successfully and telnet was closed accept tls
+uploading eds4100 accept mode settings:
+xml import successfully and telnet was closed accept tls
+Configuring xpico240
+xpico240:uploading tls certificates
+tls xml imported successfully
+xpico240 ready to send tls commands:
+reboot device
+test mux tls
+connect and accept mux commands tests begin
+serial opened
+test case 1: mux receive
+connect to remote host
+accept mux commands test started
+verify connection
+checking data K received or not
+out value: 0
+connection established. received K
+serial opened
+test case 2: send and push Hex data
+initiate hex data send
+1
+out1 value: 0
+hex data send initiated
+send data
+out2 value: 0
+data sent
+push data from mux and verify remote host receives data
+out3 value: 0
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+got data from EDS4100
+test case: binary data receive passed
+test case 4: send binary data
+binary data send initiated
+data sent
+push the data
+pushed the data
+test case 5: end the connection
+connection ended
+test case: send binary passed
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+tcp aes result checking::::: 1
+mux tls result is 1
+MUX TEST CASE PASSED

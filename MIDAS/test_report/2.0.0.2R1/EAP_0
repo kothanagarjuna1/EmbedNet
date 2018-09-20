@@ -1,0 +1,81 @@
+192.168.51.224
+Configure line as command line
+configure wlan profile eap-ttls
+test eap-ttls mschapv2
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+test eap-ttls eap-mschapv2
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+test eap-ttls chap
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+test eap-ttls pap
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+eap-ttls eap-md5
+Reboot
+1
+Configure line as command line
+configure wlan profile eap-tls
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+1
+Configure line as command line
+configure wlan profile peap
+test peap version 0
+test peap eap-md5
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+peap eap-tls
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+Configure line as command line
+configure wlan profile peap
+test peap version 1
+test peap eap-md5
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+peap eap-tls
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+Configure line as command line
+configure wlan profile FAST
+test FAST md5
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+test FAST mschapv2
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+fast option gtc
+Reboot
+check wlan0 link
+wlan link up
+wlan0 got dhcp address
+1
+1
+1
+1
+EAP protocols test passed

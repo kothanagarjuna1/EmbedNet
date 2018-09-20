@@ -1,0 +1,201 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE configrecord [
+   <!ELEMENT configrecord (configgroup+)>
+   <!ELEMENT configgroup (configitem+)>
+   <!ELEMENT configitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST configrecord version CDATA #IMPLIED>
+   <!ATTLIST configgroup name CDATA #IMPLIED>
+   <!ATTLIST configgroup instance CDATA #IMPLIED>
+   <!ATTLIST configitem name CDATA #IMPLIED>
+   <!ATTLIST configitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<configrecord version = "0.1.0.1">
+   <configgroup name = "TLS Credential" instance = "client">
+      <configitem name = "Protocols">
+         <value>TLS1.0, TLS1.1, TLS1.2</value>
+      </configitem>
+      <configitem name = "Private Key">
+         <value>-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAv0y+XAWKfjknT07ATheCWiWKZNdpH2OtDJ3JLzEz56sSqNY9
+oFW1gl0jQPe1JUY6DCbPyPJvJWuGeUo2beVBJaqhnTBnKJft4vaxaWbGzp1OYaPx
+fWcTgy4aLweSgf7cxzeTQhpfxRdzr2rrFTQLNJ9KCuiCqjBgz9xCoay3ah2/4R4Y
+f6RgJs1Y2NkJpm1rKUmq1YhFfphmhHUcWrWFJtuzZdJQJ03gaE4DkZik9wg/qXBE
+VG/zBANRPPPzRX9sTrtK6WH/mkIHuQxViic84DV2D7VSqGaYHyUe1h4zztkk/ywx
+KMLomYxeK8hkFg1fz+WLr9vQoydrvrhzBFbSQQIDAQABAoIBAQCZauOziyIRrqZu
+/RpOxp3czASccQE2kkrDNnuVZGFbJyCU1RShVHt37FgMj1vwY8zD2BCF+J/Yo845
+0aGrKtO/cIOiO6JPtOCsR+nqPOmt5AxrU/6k8ph8eOm409rUdF/9SP3JYrtxpig6
+A4Y6//0Im8LW0reP47KQoPWzEYAbEhMmmva/go7jAb2d3HT98JatviKhjc7X0CGi
+QnOyxwbEhc39vW5vLsdfOg6b52iyLrRhDuSgiYcMNSkBQN3PAOcrPM85vSmszduY
+A8wG0m107OMZEAZ8G/KE6G18px+YV9oKiLqBW3BlbWgddyYB3hHDnqllbi0NHwiK
+Ks9ZQY7RAoGBAOsskIXfAZf3f5AH2bkmrYgjMgHi+DlNKLVUIP6j2/GziHYj5ndz
+39oFCfVkD3OVpuMx9O3T4FKHWXJ44yW/Dmcki05s9c8RSg+PIQ/it5FzAHfVOw1Y
+LE7+MgZ4bLgixjHoX4AU4TrPGWB3GRGePX6EK72n9btHDOxKXFTieBUNAoGBANA9
+ipcU9jIoua6xGn+mhwIpIh2VTQoMBkIorR+uUBjriVm25jNSjNlZJHR5DSl7aY+N
+TSBGP4FxOyDnQJgQl02cdF5u98IJwe1GAG4mqrdKOU21guYk0BiaOw7fYMYsILtY
+wUyFc8v0sGI/bQoEGlhqYof+jw5VsrbbowXo780FAoGBAKvH9p1Cwwg9KfmMMnYz
+EWiyxLFqGATLHqQtGpjGGj+X82LQYGT6yBWZvqd3em3kb23fLNiX/nBqG2Updko5
+H40pvXQA1SB2sZFh7DWNVqcwyLO/lo3tzRe6R9JAHrH1/K2x3ihRmB977T5wYGhl
+HOgQJV84k59Di+YBfyYl8q71AoGAXihFfxTSUVHKy6t2wNtKVnbE3z1/7RgMyGNe
+DGIkA3CU1UT3B6O+3hQJgMSvZ99OlsMcaYh59Ix/YNxPf7KYx1YD5CMm0czZq/Co
+ByZisKfWC0YUXv2sPkOWip4EQvb3Ad8a3//DoSgNjQ8CvbGnO+02iilXA/NJ8JaV
+OvndXAUCgYBTUcd3XIuoDsgnrvyWaLzWw+/3IQrePGmG7WtGmGIaELP7dY1oYsGv
+N8pKTF72XRV4rFeundtJ+RT9kQNHIvPlTktfmtu0fdWYz0MOvp+kr85/uHNMr4Im
+/4pXIh5wvP3pQjp5xpmgHnbdG7CDm2Zp/5/nLrV94j6IY1870IhCDA==
+-----END RSA PRIVATE KEY-----
+</value>
+      </configitem>
+      <configitem name = "Certificate">
+         <value>-----BEGIN CERTIFICATE-----
+MIIFFTCCA/2gAwIBAgIBBTANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDExhXaUZp
+LUludGVybWVkaWF0ZS1DQS1zdGEwHhcNMDUwMTAxMDAwMDAwWhcNMjUwMTAxMDAw
+MDAwWjBVMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxGDAWBgoJkiaJk/IsZAEZFgh3
+aWZpbGFiczEOMAwGA1UEAxMFVXNlcnMxEjAQBgNVBAMTCXdpZmktdXNlcjCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL9MvlwFin45J09OwE4XglolimTX
+aR9jrQydyS8xM+erEqjWPaBVtYJdI0D3tSVGOgwmz8jybyVrhnlKNm3lQSWqoZ0w
+ZyiX7eL2sWlmxs6dTmGj8X1nE4MuGi8HkoH+3Mc3k0IaX8UXc69q6xU0CzSfSgro
+gqowYM/cQqGst2odv+EeGH+kYCbNWNjZCaZtaylJqtWIRX6YZoR1HFq1hSbbs2XS
+UCdN4GhOA5GYpPcIP6lwRFRv8wQDUTzz80V/bE67Sulh/5pCB7kMVYonPOA1dg+1
+UqhmmB8lHtYeM87ZJP8sMSjC6JmMXivIZBYNX8/li6/b0KMna764cwRW0kECAwEA
+AaOCAiAwggIcMD8GA1UdIwQ4MDaAFLCM4rLBhvxWYXi/HwbV8xGSsTgAoRukGTAX
+MRUwEwYDVQQDEwxXaUZpLVJvb3QtQ0GCAQMwQgYJYIZIAYb4QgEEBDUWM2h0dHA6
+Ly9zZXJ2ZXIud2lmaWxhYnMubG9jYWwvY2EvY3JsL3dpZmlpbWNhc3RhLmNybDBE
+BgNVHR8EPTA7MDmgN6A1hjNodHRwOi8vc2VydmVyLndpZmlsYWJzLmxvY2FsL2Nh
+L2NybC93aWZpaW1jYXN0YS5jcmwwTgYIKwYBBQUHAQEEQjBAMD4GCCsGAQUFBzAC
+hjJodHRwOi8vc2VydmVyLndpZmlsYWJzLmxvY2FsL2NhL2NhL3dpZmlpbWNhc3Rh
+LmNydDAgBgNVHRIEGTAXghVzZXJ2ZXIud2lmaWxhYnMubG9jYWwwMwYDVR0RBCww
+KqAoBgorBgEEAYI3FAIDoBoMGHdpZmktdXNlckB3aWZpbGFicy5sb2NhbDALBgNV
+HQ8EBAMCA+gwHQYDVR0OBBYEFM46Z4FpjamIBNNu3mIcK82iv15MMB0GA1UdJQQW
+MBQGCCsGAQUFBwMCBggrBgEFBQcDBDBEBgkqhkiG9w0BCQ8ENzA1MA4GCCqGSIb3
+DQMCAgIAgDAOBggqhkiG9w0DBAICAIAwBwYFKw4DAgcwCgYIKoZIhvcNAwcwFwYJ
+KwYBBAGCNxQCBAoeCABVAHMAZQByMA0GCSqGSIb3DQEBBQUAA4IBAQCbDUsTwd1+
+Ce045j0Pw6IWoWNjsMyysDoETtc8vaUaMNTuilM4c3qRkNvu93VjX+WCe/D9a5nN
+wDrh8PORvKZGF4DYViDWdq/OBIe7H5bBa4C3fYCGSEbtap612pBKb60nnZGlR9JV
+HjTYO5YiYTaG3T4MOZOUI1G9cjoNwq64NU5TMDcOkWvA3qgpHoSgkAD24ig9BAHL
+k7M7/2Zctx+MtYXGJaTMegYZ+VIeawivW0OPZQIm+ptDY8jyNPbBaoRCOySaiis5
+/4oQ+pE8TUlSYzbojS8frWCsTJ0WM4nXAsQFUcqixrsGqUrRABAHujc8/gF2l2tr
+0EeFaZAdFTOl
+-----END CERTIFICATE-----
+</value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "1">
+         <value name = "Certificate">-----BEGIN CERTIFICATE-----
+MIIEVzCCAz+gAwIBAgIBAzANBgkqhkiG9w0BAQUFADAXMRUwEwYDVQQDEwxXaUZp
+LVJvb3QtQ0EwHhcNMDUwMTAxMDAwMDAwWhcNMjUwMTAxMDAwMDAwWjAjMSEwHwYD
+VQQDExhXaUZpLUludGVybWVkaWF0ZS1DQS1zdGEwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQCi/p4AsGV9dkTmCjPQ8vLA7vdAIUUAvMpPUQ2kqh7xN82c
+4/4xvtVkSDHsTTgZMWNc+wxGt0L+5XgI5evJx6ZSDWKiBtERTudJW8KnuS9D9uD7
+vk3pMRhVqHMMJdXtZk3D7WtxdO+0UZAyWoO5bkifDtQhyIlgULmsKAbjqjapFpJO
+0yoGrj2LGpIAmUk+lSlWn1tFk5Ct2j5BDwPlgSJTUkt/Qpi7Yh7p9l3kz2ldXBCf
+J3O47tr2zENW0yIpGn7lirdBz8iUADE0iSprJzWbFr7/VBLqGMKXOujhZ70CCTRM
+WLh53hrbE1xQYZGTZSZNHxFjGyhrRZq7BuFMIUk3AgMBAAGjggGgMIIBnDA/BgNV
+HSMEODA2gBTXHXTI1mqUjBDPBU/jlqbWz7Ji86EbpBkwFzEVMBMGA1UEAxMMV2lG
+aS1Sb290LUNBggEBMEEGCWCGSAGG+EIBBAQ0FjJodHRwOi8vc2VydmVyLndpZmls
+YWJzLmxvY2FsL2NhL2NybC93aWZpcm9vdGNhLmNybDBDBgNVHR8EPDA6MDigNqA0
+hjJodHRwOi8vc2VydmVyLndpZmlsYWJzLmxvY2FsL2NhL2NybC93aWZpcm9vdGNh
+LmNybDBNBggrBgEFBQcBAQRBMD8wPQYIKwYBBQUHMAKGMWh0dHA6Ly9zZXJ2ZXIu
+d2lmaWxhYnMubG9jYWwvY2EvY2Evd2lmaXJvb3RjYS5jcnQwIAYDVR0SBBkwF4IV
+c2VydmVyLndpZmlsYWJzLmxvY2FsMCAGA1UdEQQZMBeCFXNlcnZlci53aWZpbGFi
+cy5sb2NhbDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4E
+FgQUsIzissGG/FZheL8fBtXzEZKxOAAwDQYJKoZIhvcNAQEFBQADggEBAJTw1owK
+3hDQfaWw3v2NHsuK7GBmdCIxsXitDgJTmcZ1EGVgWVdgduWHWIK0b7YRuW2dCX9V
+ICikaUURSp5tONRrJroF2kwS40CG3X9Lx/G39K7hxbk7S4pkkVca8Z5VVhbOP9HY
+KUrCgZruksg8Q4WqLVsvnGgA11b0/oVf8kWauScZeFh5PNtTa0WU8iIJ4PXD/7w9
+7UEzY+U7TOJR0h36/NGilu5XTwjcMesfnb2fTHXAzU95H3xbamFc51Tzv7Tn6eQB
+7k4aD5rAInKwN5xR5i9RZOzfgG/ZCFtYrN0y9KYvTRgdkl4uFq929k0v5xP6dqci
+V0zlAVNpC/k0urU=
+-----END CERTIFICATE-----
+</value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "2">
+         <value name = "Certificate">-----BEGIN CERTIFICATE-----
+MIIECjCCAvKgAwIBAgIBATANBgkqhkiG9w0BAQUFADAXMRUwEwYDVQQDEwxXaUZp
+LVJvb3QtQ0EwHhcNMDUwMTAxMDAwMDAwWhcNMjUwMTAxMDAwMDAwWjAXMRUwEwYD
+VQQDEwxXaUZpLVJvb3QtQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQC555sEVFOZC7ZtUJfIQjaC4JOkUbd+nmrcIj052lzQoilRj+E2o0UHzJwkydNb
+vDSD6/3iedZwERae2oPA/nCYL9sOnQCpfJm6u8TbSuLuRqylNRvCvfDgancpNG5t
+X1HeZ/0n8VACv+kblS6ZC7NNfLxeSyldUuMU3tNt+rQHbLeD51qzUcZzppbrly+6
+BPDy6+7AuJUpmMqvi8knrSKTF5yIUXmQMcufmEe2XAPRD5i/6jKXZdNU1XELUn9V
+p4ixCwTVhHGnYihTuzO+Ef2YfToDmBdzt9beAldHOZ0MJheqM0JEWrANjxr3vxi/
+LTIqMgxMusnqqS4HvkzSxFn3AgMBAAGjggFfMIIBWzAPBgNVHRMBAf8EBTADAQH/
+MA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQU1x10yNZqlIwQzwVP45am1s+yYvMw
+QQYJYIZIAYb4QgEEBDQWMmh0dHA6Ly9zZXJ2ZXIud2lmaWxhYnMubG9jYWwvY2Ev
+Y3JsL3dpZmlyb290Y2EuY3JsMEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9zZXJ2
+ZXIud2lmaWxhYnMubG9jYWwvY2EvY3JsL3dpZmlyb290Y2EuY3JsME0GCCsGAQUF
+BwEBBEEwPzA9BggrBgEFBQcwAoYxaHR0cDovL3NlcnZlci53aWZpbGFicy5sb2Nh
+bC9jYS9jYS93aWZpcm9vdGNhLmNydDAgBgNVHRIEGTAXghVzZXJ2ZXIud2lmaWxh
+YnMubG9jYWwwIAYDVR0RBBkwF4IVc2VydmVyLndpZmlsYWJzLmxvY2FsMA0GCSqG
+SIb3DQEBBQUAA4IBAQCRdTUh+WTd+LFz32QZUPbJ3Qb++STu7ZsdT9p2B/zbhyAT
+tscIJZoIczLWttbkxwCI0mB9hU6D5p7RdWyodpYbkheZFYVvJ2yuSKEx0jTakOq4
+sDCFy6LCwI67RTE12ngU0Uo2TZe/MxrF5tqKnhXCh9GEMeu9uAT2l/o4plI0sx7N
+G/vCPkwvygpgl3TQkQygmOgXYyc7cqAHsC9vOgCv10zbN5y1Hme1gV7JucF74Ma1
+AozWbdQAC1d+95lQ1IO8j/TrrSD0InivVSzS3FXa7vLneyR2GbguHdo3GLuFd+/r
+LrQ+weBJZ7Sk+f+f3HaskrSW7Lo2RoDMpPmJPvl9
+-----END CERTIFICATE-----
+</value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "3">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "1">
+         <value name = "Certificate">-----BEGIN CERTIFICATE-----
+MIIDmzCCAoOgAwIBAgIJAPlJMezbckqxMA0GCSqGSIb3DQEBCwUAMGQxCzAJBgNV
+BAYTAlVTMQswCQYDVQQIDAJDQTEPMA0GA1UEBwwGSXJ2aW5lMRIwEAYDVQQKDAlM
+YW50cm9uaXgxFDASBgNVBAsMC0VuZ2luZWVyaW5nMQ0wCwYDVQQDDARsdHJ4MB4X
+DTE2MTIyMjAwNTcwOFoXDTE3MTIyMjAwNTcwOFowZDELMAkGA1UEBhMCVVMxCzAJ
+BgNVBAgMAkNBMQ8wDQYDVQQHDAZJcnZpbmUxEjAQBgNVBAoMCUxhbnRyb25peDEU
+MBIGA1UECwwLRW5naW5lZXJpbmcxDTALBgNVBAMMBGx0cngwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDLeqeXOTblCC1o4QjcAG0tupixOgadQ/smIFLT
+01xT6+NKB8+EohJ6Qhr9Eqx+xESuQpw0bKGanHsgG7qV/eoH4sCHejG9mF/zy7mq
+sC4nbM9lX9FLdRAIHCuvS4Kn1ey7Nm5fk5uyKQtLVSjqw9N4vnWPDHKrg2Ng6fhS
+oeRD5kFgn+tSNJfql/FqlMwpMfPa0AHtR/0t7hZYbuV9hid4J8sAF9s4PuYR6bg8
+zxbll/i+0iYiLScSXJ804t8qCNaOkYbhJmVRDtpaeC7t9QV0BSSzfzd68VqOO/wM
+hgFjS50a48B1qPyMr/XsmBoHQDZrQyQnFpzb3RzTYGkBRZohAgMBAAGjUDBOMB0G
+A1UdDgQWBBRp9OpAcH/B2zQ82LmuRRosCQ162zAfBgNVHSMEGDAWgBRp9OpAcH/B
+2zQ82LmuRRosCQ162zAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBj
+3TvaJ7pRVSgDKe3J3vm/XLSfsaT+9o6KNHweaLVvDO6Bv2gtlUXvx7Gefj+HRe4f
+a4hzNaHt/w86OV+oQS6FJVIHcgroN4VGcdehmhKfFNsJFJaNLhG5rdrxoDCnoaGp
+HsxlEeY2nuRz8gG79GoVI1C5Y/L4ynX2St/UrTWsIX87+taoCYWCEcZLZltBOnX2
+Vcfbrcu99eVB6U1NHjs/E9fdVaLnn2tZZ0bHmlMuySbMMoOKYMO11NKkELnIIt9K
+DPXthiW8nd4urMIBDxsh1CXraOR4j4ZZVj2sB9uQ+o6Unj5l8f1u8w1IZpKLDMAK
+aFItn2c68eRy5yshbnRa
+-----END CERTIFICATE-----
+</value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "2">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "3">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "4">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "5">
+         <value name = "Certificate"></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "HTTP Server">
+      <configitem name = "Mode">
+         <value>Enabled</value>
+      </configitem>
+      <configitem name = "Port">
+         <value>80</value>
+      </configitem>
+      <configitem name = "Secure Port">
+         <value>443</value>
+      </configitem>
+      <configitem name = "Secure Credential">
+         <value>client</value>
+      </configitem>
+      <configitem name = "Authentication Timeout">
+         <value>30 minutes</value>
+      </configitem>
+      <configitem name = "Inactivity Timeout">
+         <value>5 minutes</value>
+      </configitem>
+   </configgroup>
+</configrecord>
+

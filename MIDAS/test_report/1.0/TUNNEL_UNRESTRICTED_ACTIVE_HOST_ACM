@@ -1,0 +1,25 @@
+2018-07-15 12:02:21	 Test UDP Tunnel
+2018-07-15 12:02:21	 ===============
+eth0
+2018-07-15 12:02:21	 configure device
+2018-07-15 12:02:21	 enabled telnet ........
+Rebooting
+2018-07-15 12:02:21	 configuring device
+2018-07-15 12:02:21	 line host_acm
+serial opened
+Testing UDP active
+serial data is H
+serial data is E
+serial data is L
+serial data is L
+serial data is O
+serial data is  
+serial data is W
+serial data is O
+serial data is R
+serial data is L
+serial data is D
+2018-07-15 12:02:21	 udp tunnel active unrestricted mode: data sent through UDP tunnel.test passed
+result is: 1
+1
+2018-07-15 12:02:21	 TEST CASE PASSED

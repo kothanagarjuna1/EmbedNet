@@ -1,0 +1,42 @@
+Test Radio
+=========
+reboot device for changes to take effect
+device is rebooting
+delete all wlan profiles
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE function [
+   <!ELEMENT function (return)>
+   <!ELEMENT return (result,message+)>
+   <!ELEMENT result (#PCDATA)>
+   <!ELEMENT message (#PCDATA)>
+   <!ATTLIST function version CDATA #IMPLIED>
+]>
+<function version = "0.1.0.0">
+   <return>
+      <message>No configuration changes were made.</message>
+      <message>XML import completed.</message>
+      <result>Succeeded</result>
+   </return>
+</function>
+
+try connecting to wlan profile in 5ghz
+try 1
+try 2
+try 3
+wlan profile Lantronix_5TEST not found in scan.
+try connecting to wlan profile in 2.4
+wlan profile Lantronix_2.4TEST not found in scan.retry
+wlan profile Lantronix_2.4TEST 2.4 ghz found in scan.test case radio band 2.4 ghz only passed 
+change radio band to 5ghz
+reboot device for changes to take effect
+device is rebooting
+wlan profile Lantronix_5TEST found in scan.
+test radio band dual
+change radio band to dual
+reboot device for changes to take effect
+device is rebooting
+wlan profile Lantronix_2.4TEST found in scan
+try connecting to wlan profile in 5ghz
+wlan profile Lantronix_5TEST found in scan.radio band dual test case passed
+Test Case Radio PASSED

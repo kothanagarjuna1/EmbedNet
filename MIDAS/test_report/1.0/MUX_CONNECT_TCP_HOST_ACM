@@ -1,0 +1,53 @@
+Test MUX
+=========
+eth0
+configure device
+Rebooting
+configuring device
+line host_acm
+end of device configuration
+testing mux
+mux outgoing connection tests begin
+serial opened
+test case 1: mux receive
+connect to remote host
+verify connection
+connection established. received K
+connected by ('192.168.51.240', 62477)
+sending
+waiting for receiving event/data
+send data
+check whether is data waiting
+data is waiting. received 1r
+read and check data
+reading data from serial
+Kabcde
+data read from serial
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+.
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+123
+data received 123
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+data read from serial is abcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 12345678
+connection ended
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+result is 1
+TEST CASE PASSED

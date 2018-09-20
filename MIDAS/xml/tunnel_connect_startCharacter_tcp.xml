@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE configrecord [
+   <!ELEMENT configrecord (configgroup+)>
+   <!ELEMENT configgroup (configitem+)>
+   <!ELEMENT configitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST configrecord version CDATA #IMPLIED>
+   <!ATTLIST configgroup name CDATA #IMPLIED>
+   <!ATTLIST configgroup instance CDATA #IMPLIED>
+   <!ATTLIST configitem name CDATA #IMPLIED>
+   <!ATTLIST configitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<configrecord version = "0.1.0.1">
+   <configgroup name = "Tunnel Connect" instance = "1">
+      <configitem name = "Mode">
+         <value>Start Character</value>
+      </configitem>
+      <configitem name = "Start Character">
+         <value>b</value>
+      </configitem>
+      <configitem name = "Flush Start Character">
+         <value>Enabled</value>
+      </configitem>
+      <configitem name = "Local Port">
+         <value>&lt;Random&gt;</value>
+      </configitem>
+      <configitem name = "Host" instance = "1">
+         <value name = "Address">192.168.51.55</value>
+         <value name = "Port">10001</value>
+         <value name = "Protocol">TCP</value>
+         <value name = "Credential">test</value>
+         <value name = "Initial Send"></value>
+         <value name = "Reception">Restricted</value>
+      </configitem>
+      <configitem name = "Host" instance = "2">
+         <value name = "Address"></value>
+         <value name = "Port">&lt;None&gt;</value>
+         <value name = "Protocol">TCP</value>
+         <value name = "Credential"></value>
+         <value name = "Initial Send"></value>
+         <value name = "Reception">Restricted</value>
+      </configitem>
+      <configitem name = "Connections">
+         <value>Sequential</value>
+      </configitem>
+      <configitem name = "Reconnect Time">
+         <value>15 seconds</value>
+      </configitem>
+      <configitem name = "Flush Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Network">
+         <value>Disabled</value>
+      </configitem>
+   </configgroup>
+</configrecord>

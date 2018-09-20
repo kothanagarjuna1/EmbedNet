@@ -1,0 +1,6 @@
+2018-08-28 06:10:51	 Test Clock Source - manual and ntp
+2018-08-28 06:10:51	 Test clock source manual
+2018-08-28 06:10:51	 clock set correctly.clock source manual test passed
+2018-08-28 06:10:51	 Test clock source NTP
+2018-08-28 06:10:51	 ntp running
+2018-08-28 06:10:51	 device synchronised with ntp server.TEST CASE PASSED

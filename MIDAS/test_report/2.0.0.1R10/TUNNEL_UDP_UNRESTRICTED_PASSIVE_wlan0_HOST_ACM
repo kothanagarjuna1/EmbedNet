@@ -1,0 +1,52 @@
+2018-08-15 09:39:03	 Test UDP Tunnel
+2018-08-15 09:39:03	 ===============
+wlan0
+2018-08-15 09:39:03	 configure device
+2018-08-15 09:39:03	 enabled telnet ........
+Rebooting
+2018-08-15 09:39:03	 configuring device
+2018-08-15 09:39:03	 line host_acm
+serial opened
+Testing UDP passive
+timed out
+data is a
+serial data is H
+serial data is E
+serial data is L
+serial data is L
+serial data is O
+serial data is  
+serial data is W
+serial data is O
+serial data is R
+serial data is L
+serial data is D
+serial data is H
+12
+serial data is E
+13
+serial data is L
+14
+serial data is L
+15
+serial data is O
+16
+serial data is  
+17
+serial data is W
+18
+serial data is O
+19
+serial data is R
+20
+serial data is L
+21
+serial data is D
+22
+1
+1
+1
+udp tunnel passive mode test case passed unrestricted
+result is: 1
+1
+2018-08-15 09:39:03	 TEST CASE PASSED

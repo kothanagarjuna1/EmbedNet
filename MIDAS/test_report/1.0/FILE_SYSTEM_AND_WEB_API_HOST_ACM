@@ -1,0 +1,175 @@
+Test File system commands and Web API
+=====================================
+format fs
+file system formatted
+test filesystem webAPI - this test uses file system webAPI to manipulate the files and directories without the need for browser using curl command.Four principal HTTP requests are implemented by the API: GET, PUT, MKCOL, and DELETE.
+test case 1:HTTP GET
+dir is /embedded
+dir found
+test case 2:HTTP PUT
+uploading file...
+file upload failed
+test case 3: create a dir MKCOL
+dir1
+directory successfully created
+409 Directory exists
+directory already exists
+test case 4: delete file DEL
+file is deleted
+test case 5: export status group
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE statusrecord [
+   <!ELEMENT statusrecord (statusgroup+)>
+   <!ELEMENT statusgroup (statusitem+,statusgroup*)>
+   <!ELEMENT statusitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST statusrecord version CDATA #IMPLIED>
+   <!ATTLIST statusgroup name CDATA #IMPLIED>
+   <!ATTLIST statusgroup instance CDATA #IMPLIED>
+   <!ATTLIST statusitem name CDATA #IMPLIED>
+   <!ATTLIST statusitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<statusrecord version = "0.1.0.1">
+   <statusgroup name = "Device">
+      <statusitem name = "Product Type">
+         <value>xPico250</value>
+      </statusitem>
+      <statusitem name = "Product ID">
+         <value>Y3</value>
+      </statusitem>
+      <statusitem name = "Product SKU">
+         <value>XPC250100</value>
+      </statusitem>
+      <statusitem name = "Antenna">
+         <value>U.FL</value>
+      </statusitem>
+      <statusitem name = "Serial Number">
+         <value>0080A3C7044A</value>
+      </statusitem>
+      <statusitem name = "Configuration Version">
+         <value>[unversioned]</value>
+      </statusitem>
+      <statusitem name = "Configuration Modified">
+         <value>Yes</value>
+      </statusitem>
+      <statusitem name = "Firmware Version">
+         <value>2.0.0.1R0</value>
+      </statusitem>
+      <statusitem name = "Active Partition">
+         <value>2</value>
+      </statusitem>
+      <statusitem name = "Build Date">
+         <value>Jul 11 2018 (17:58:27)</value>
+      </statusitem>
+      <statusitem name = "Bootloader Version">
+         <value>1.3.0.0R1</value>
+      </statusitem>
+      <statusitem name = "Bootloader Date">
+         <value>Jun 28 2018 09:58:10</value>
+      </statusitem>
+      <statusitem name = "Uptime">
+         <value>2 minutes 13 seconds</value>
+      </statusitem>
+      <statusitem name = "Permanent Config">
+         <value>Saved</value>
+      </statusitem>
+   </statusgroup>
+</statusrecord>
+
+status group successfully exported
+test case 6: take status action
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE function [
+   <!ELEMENT function (return)>
+   <!ELEMENT return (result,message+)>
+   <!ELEMENT result (#PCDATA)>
+   <!ELEMENT message (#PCDATA)>
+   <!ATTLIST function version CDATA #IMPLIED>
+]>
+<function version = "0.1.0.0">
+   <return>
+      <message>Requesting DHCP lease renewal.</message>
+      <result>Succeeded</result>
+   </return>
+</function>
+
+wlan0 dhcp lease renewed
+test case 7: import xml
+curl: (26) couldn't open file "../config.xml"
+
+xml import is not successful
+file system API test case failed.
+0
+Test Case: Set Clock Manually
+clock set successfully
+Test Case:Action Save
+clock source set successfully
+Test Case:Action Sync
+Test Case: Kill Outgoing Tunnel Connection
+tunnel connect status <?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE statusrecord [
+   <!ELEMENT statusrecord (statusgroup+)>
+   <!ELEMENT statusgroup (statusitem+,statusgroup*)>
+   <!ELEMENT statusitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST statusrecord version CDATA #IMPLIED>
+   <!ATTLIST statusgroup name CDATA #IMPLIED>
+   <!ATTLIST statusgroup instance CDATA #IMPLIED>
+   <!ATTLIST statusitem name CDATA #IMPLIED>
+   <!ATTLIST statusitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<statusrecord version = "0.1.0.1">
+   <statusgroup name = "Tunnel" instance = "HOST_CDC_ACM">
+      <statusitem name = "Accept">
+         <value>No local port</value>
+      </statusitem>
+      <statusitem name = "Connect">
+         <value>Waiting</value>
+      </statusitem>
+      <statusitem name = "Aggregate">
+         <value name = "Completed Accepts">0</value>
+         <value name = "Completed Connects">0</value>
+         <value name = "Disconnects">0</value>
+         <value name = "Dropped Accepts">0</value>
+         <value name = "Dropped Connects">0</value>
+         <value name = "Octets from Line">0</value>
+         <value name = "Octets from Network">0</value>
+         <value name = "Accept Connection Time">0 seconds</value>
+         <value name = "Connect 1 Connection Time">0 seconds</value>
+         <value name = "Connect 2 Connection Time">0 seconds</value>
+      </statusitem>
+   </statusgroup>
+</statusrecord>
+
+tunnel is active. kill active tunnel outgoing connection
+tunnel kill is <?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE function [
+   <!ELEMENT function (return)>
+   <!ELEMENT return (result,message+)>
+   <!ELEMENT result (#PCDATA)>
+   <!ELEMENT message (#PCDATA)>
+   <!ATTLIST function version CDATA #IMPLIED>
+]>
+<function version = "0.1.0.0">
+   <return>
+      <result>Failed</result>
+   </return>
+</function>
+
+Test Case:Kill Incoming Tunnel Connection
+Traceback (most recent call last):
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py_host", line 718, in <module>
+    main()
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py_host", line 712, in main
+    web_api = webapi()
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py_host", line 585, in webapi
+    sock1 = socket.create_connection((device_ip,tunnel_port))
+  File "/usr/lib/python2.7/socket.py", line 575, in create_connection
+    raise err
+socket.error: [Errno 111] Connection refused

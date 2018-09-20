@@ -1,0 +1,21 @@
+2018-08-28 06:14:47	 factory defaults the xpico240/250
+2018-08-28 06:14:47	 ...............................
+2018-08-28 06:14:47	 ...............................
+2018-08-28 06:14:47	 device is rebooting
+2018-08-28 06:14:47	 Test TLS version 1.2.Any client request with TLS version 1.0 and 1.1 will be rejected
+2018-08-28 06:14:47	 import certificate and private key
+2018-08-28 06:14:47	 Reboot
+curl: (35) gnutls_handshake() failed: Error in the push function.
+
+2018-08-28 06:14:47	 web api command successful even though tls version does not match.Test Failed
+2018-08-28 06:14:47	 ==========================================================
+2018-08-28 06:14:47	 Test TLS version 1.1.Any client request with TLS version 1.0 and 1.2 will be rejected
+curl: (35) gnutls_handshake() failed: Error in the push function.
+
+2018-08-28 06:14:47	 web api command successful even though tls version does not match.Test Failed
+2018-08-28 06:14:47	 ================================================================
+2018-08-28 06:14:47	 Test TLS version 1.0.Any client request with TLS version 1.1 and 1.2 will be rejected
+curl: (35) gnutls_handshake() failed: Error in the push function.
+
+2018-08-28 06:14:47	 web api command successful even though tls version does not match.Test Failed
+2018-08-28 06:14:47	 TLS version test case Failed

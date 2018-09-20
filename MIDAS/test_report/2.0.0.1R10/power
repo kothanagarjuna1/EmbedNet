@@ -1,0 +1,129 @@
+2018-08-15 11:14:38 	 Test Power Standby
+2018-08-15 11:14:38 	 ===================
+able to ping device
+ping_res 1
+2018-08-15 11:14:42 	 configure device
+2018-08-15 11:14:44 	 enabled telnet ........
+2018-08-15 11:14:54 	 import xml
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE function [
+   <!ELEMENT function (return)>
+   <!ELEMENT return (result,message+)>
+   <!ELEMENT result (#PCDATA)>
+   <!ELEMENT message (#PCDATA)>
+   <!ATTLIST function version CDATA #IMPLIED>
+]>
+<function version = "0.1.0.0">
+   <return>
+      <message>XML import completed.</message>
+      <result>Succeeded</result>
+   </return>
+</function>
+
+2018-08-15 11:15:13 	 xml import successful
+2018-08-15 11:15:13 	 Reboot
+2018-08-15 11:16:13 	 establish outgoing and incoming tunnel
+2018-08-15 11:16:13 	 bind socket to port
+None
+1
+2018-08-15 11:16:18 	 wait for time powered up to expire.sleep 3 min
+able to ping device
+ping_res 1
+2018-08-15 11:19:42 	 device did not power down since tunnel is active. Test Passed
+2018-08-15 11:19:42 	 disconnect incoming tunnel
+able to ping device
+ping_res 1
+2018-08-15 11:19:46 	 device did not power down since tunnel connect is active.Test Passed
+2018-08-15 11:19:46 	 disconnect outgoing tunnel
+cannot ping device
+ping_res 0
+2018-08-15 11:20:08 	 device powered down after tunnel is disconnected. Test Passed
+2018-08-15 11:20:08 	 wait for max time power down to expire. sleep 60s
+able to ping device
+ping_res 1
+2018-08-15 11:21:23 	 device powered up after max power down expired
+2018-08-15 11:21:23 	 check tlog to confirm device wakeup from standby
+2018-08-15 11:21:26 	 device powered up from standby
+2018-08-15 11:21:26 	 enable command mode
+2018-08-15 11:21:29 	 wait for time powered up to expire.sleep 3 min
+able to ping device
+ping_res 1
+2018-08-15 11:24:54 	 device did not power down since command mode is enabled.Test Passed
+cannot ping device
+ping_res 0
+2018-08-15 11:25:13 	 device powered down after command mode is disabled. Test Passed
+2018-08-15 11:25:13 	 wait for max time power down to expire.sleep 1 min
+able to ping device
+ping_res 1
+2018-08-15 11:26:27 	 device powered up from standby
+2018-08-15 11:26:27 	 check tlog to confirm device wakeup from standby
+2018-08-15 11:26:30 	 device powered up from standby
+2018-08-15 11:26:30 	 enable http server
+2018-08-15 11:26:41 	 <?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE statusrecord [
+   <!ELEMENT statusrecord (statusgroup+)>
+   <!ELEMENT statusgroup (statusitem+,statusgroup*)>
+   <!ELEMENT statusitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST statusrecord version CDATA #IMPLIED>
+   <!ATTLIST statusgroup name CDATA #IMPLIED>
+   <!ATTLIST statusgroup instance CDATA #IMPLIED>
+   <!ATTLIST statusitem name CDATA #IMPLIED>
+   <!ATTLIST statusitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<statusrecord version = "0.1.0.1">
+   <statusgroup name = "Device">
+      <statusitem name = "Product Type">
+         <value>xPico240</value>
+      </statusitem>
+      <statusitem name = "Product ID">
+         <value>Y2</value>
+      </statusitem>
+      <statusitem name = "Product SKU">
+         <value>XPC240100</value>
+      </statusitem>
+      <statusitem name = "Antenna">
+         <value>U.FL</value>
+      </statusitem>
+      <statusitem name = "Serial Number">
+         <value>0080A3B787E1</value>
+      </statusitem>
+      <statusitem name = "Configuration Version">
+         <value>[unversioned]</value>
+      </statusitem>
+      <statusitem name = "Configuration Modified">
+         <value>Yes</value>
+      </statusitem>
+      <statusitem name = "Firmware Version">
+         <value>2.0.0.1R10</value>
+      </statusitem>
+      <statusitem name = "Active Partition">
+         <value>1</value>
+      </statusitem>
+      <statusitem name = "Build Date">
+         <value>Aug 14 2018 (13:23:27)</value>
+      </statusitem>
+      <statusitem name = "Bootloader Version">
+         <value>1.2.0.0R2</value>
+      </statusitem>
+      <statusitem name = "Bootloader Date">
+         <value>Oct  6 2017 07:40:38</value>
+      </statusitem>
+      <statusitem name = "Uptime">
+         <value>39 seconds</value>
+      </statusitem>
+      <statusitem name = "Permanent Config">
+         <value>Unsaved</value>
+      </statusitem>
+   </statusgroup>
+</statusrecord>
+
+2018-08-15 11:26:41 	 wait for http inactivity timeeout to expire.sleep 300s
+cannot ping device
+ping_res 0
+2018-08-15 11:32:36 	 device powered down when http server was inactive. Test Passed
+result is 1
+2018-08-15 11:32:36 	 Power Management TEST CASE PASSED

@@ -1,0 +1,49 @@
+2018-08-15 12:03:15 	 Test Tunnel Connect Modes
+2018-08-15 12:03:15 	 =========================
+2018-08-15 12:03:15 	 Rebooting
+2018-08-15 12:04:10 	 serial opened
+2018-08-15 12:04:20 	 test tunnel sequential mode
+2018-08-15 12:04:25 	 connected by ('192.168.51.161', 52098)
+2018-08-15 12:04:25 	 sending from network
+2018-08-15 12:04:40 	 serial data ser1 is ['abc']
+2018-08-15 12:04:40 	 receving from network
+2018-08-15 12:04:40 	 data is hela
+2018-08-15 12:05:45 	 2nd TRY
+2018-08-15 12:05:45 	 connected by ('192.168.51.161', 61216)
+2018-08-15 12:05:45 	 sending from network
+2018-08-15 12:06:05 	 serial data ser2 ['abc']
+2018-08-15 12:06:05 	 receiving from network
+2018-08-15 12:07:05 	 data1 is hela
+2018-08-15 12:07:05 	 data sent and received from network
+2018-08-15 12:07:05 	 result is 1
+2018-08-15 12:07:05 	 Tunnel Connect Sequential Passed
+2018-08-15 12:07:06 	 Rebooting
+2018-08-15 12:07:59 	 serial opened
+2018-08-15 12:08:09 	 test tunnel simultaneous mode
+2018-08-15 12:08:09 	 connected by ('192.168.51.161', 49166)
+2018-08-15 12:08:09 	 connected by ('192.168.51.161', 50838)
+2018-08-15 12:08:09 	 sending from network
+2018-08-15 12:08:39 	 serial data ser1 ['abcabc']
+2018-08-15 12:09:40 	 data is hela
+2018-08-15 12:09:40 	 data1 is hela
+2018-08-15 12:09:40 	 data sent and received from network
+2018-08-15 12:09:40 	 result is 1
+2018-08-15 12:09:40 	 Tunnel Connect Simultaneous Passed
+2018-08-15 12:09:40 	 Rebooting
+2018-08-15 12:10:34 	 serial opened
+2018-08-15 12:10:44 	 test tunnel round-robin mode
+2018-08-15 12:10:44 	 connected by ('192.168.51.161', 49835)
+2018-08-15 12:10:44 	 sending from network
+2018-08-15 12:10:54 	 serial data ser2 ['abc']
+2018-08-15 12:10:54 	 receiving from network
+2018-08-15 12:10:54 	 data1 is hela
+2018-08-15 12:11:59 	 2nd TRY
+2018-08-15 12:12:09 	 connected by ('192.168.51.161', 56135)
+2018-08-15 12:12:09 	 sending from network
+2018-08-15 12:12:19 	 serial data ser1 ['abc']
+2018-08-15 12:12:19 	 receiving from network
+2018-08-15 12:12:19 	 data is hela
+2018-08-15 12:13:19 	 data sent and received from network
+2018-08-15 12:13:19 	 result is 1
+2018-08-15 12:13:19 	 Tunnel Connect Round-Robin Passed
+2018-08-15 12:13:19 	 Tunnel Connect TEST CASE PASSED

@@ -1,0 +1,208 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE configrecord [
+   <!ELEMENT configrecord (configgroup+)>
+   <!ELEMENT configgroup (configitem+)>
+   <!ELEMENT configitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST configrecord version CDATA #IMPLIED>
+   <!ATTLIST configgroup name CDATA #IMPLIED>
+   <!ATTLIST configgroup instance CDATA #IMPLIED>
+   <!ATTLIST configitem name CDATA #IMPLIED>
+   <!ATTLIST configitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<configrecord version = "0.1.0.1">
+     <configgroup name = "Line" instance = "1">
+      <configitem name = "Name">
+         <value></value>
+      </configitem>
+      <configitem name = "Interface">
+         <value>RS232</value>
+      </configitem>
+      <configitem name = "State">
+         <value>Enabled</value>
+      </configitem>
+      <configitem name = "Protocol">
+         <value>Tunnel</value>
+      </configitem>
+      <configitem name = "Baud Rate">
+         <value>9600 bits per second</value>
+      </configitem>
+      <configitem name = "Parity">
+         <value>None</value>
+      </configitem>
+      <configitem name = "Data Bits">
+         <value>8</value>
+      </configitem>
+      <configitem name = "Stop Bits">
+         <value>1</value>
+      </configitem>
+      <configitem name = "Flow Control">
+         <value>None</value>
+      </configitem>
+      <configitem name = "Gap Timer">
+         <value>&lt;Four Character Periods&gt;</value>
+      </configitem>
+      <configitem name = "Threshold">
+         <value>56 bytes</value>
+      </configitem>
+      <configitem name = "Push">
+         <value></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "TLS Credential" instance = "tls">
+      <configitem name = "Protocols">
+         <value>TLS1.0, TLS1.1, TLS1.2</value>
+      </configitem>
+      <configitem name = "Private Key">
+         <value>-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAu26pz/Xk8xcHR7sr1cBQEdyLyfNTigZLAobF9CvAj6SuyvZ/
+5IFuyu7w/rsFqtRWzX7R3PcB5yO4Yjco7mqhSwGCVKFXT3O8FuFv/h6pGP4KpiFc
+yt5AAHRMPsSP/M78tbb4muk2lIrPxSmJb6x8c22/CfleALO1tVijoHTq+63Oac+Z
+DWkh3mplndRWeedjvqP2q8TU/IBzfpw0g/Xr99lg0lybZ92KwJTC5Lfz/Jc/jOuP
+a0SO7u2GJJfX2Xc0u4c36tS6hXjdElwxzbH8OBZQcgVP1MoX+uSwuEc0MsjlHbFG
+CQmGXB7Ocv3PG3IixI5Ln25mLF79WD4hlzpImwIDAQABAoIBABZFOOIf2ntT0iag
+w72bIyhsJyPwyI1O4BzFvMGdbTzkGWy+S0XwZySvrWzm9e5tWn8CQZdathwrr13k
+JfXmL5IE9OJvZTtoigHB+ZedNwRkMwm4Txk/vSUQrHqMynsEcRx6SCHH8hdGQxev
+LshZG1RvxtI9kgDNWZrZlF+dZMpQkWPYKiiC1kmgWZkazqY4ypvPw13MbVrn2O5z
+EcawKr4XHOagqzRc4r5fLru1JzsvBRNdbsyoyz7198Xl81nF2wrOEN49d1Va5s+I
+NTCVgsUuqu/uWjsQx0robqwMkch0E1nYX8MiS33fKMalxd7bcpclDaHG3m4i3Lbz
+sET9X4ECgYEA5x9TdCQju3u4HDtFLfNL5EC1Q7EM61FsyVlo48ltoDQrx8/4/6j2
+T/aha6CPP1YoX9d7VcdSwD9369G3zVaqAyewex/Oktw7LeFYmnQplOWnRif6aXjn
+KRMbucJZV3BtLve/zGGBMhtGHsoEXr/fR+sJijjG9EZFgu0mg1cj1EECgYEAz5tw
+Rq9P5M8IUF9bY0Xk8m/h56CMWRJdRx15h5KXPXSE5fqcnqNAjGB9Lv9jOci2uxKw
+XAZi95+Ka/DqdFARculxS4cPTuuK75R2Enl/WetBs4L5G+Yo4U4q8mh1chP+BfjY
+7iXWa5bcFXsxo32wEPnQV9gOsw65Sjqvwf8SddsCgYAwTNuj6emNxM01GS3b7Hxv
+txYqj1Wj1+BkM8s3z2CZmk2L9GqVAzp2e5RAac2F7vuBDAc6Ze1lP95P6gP/ZZ0i
+C6lWEc+Z4Wx8qhtaK+yEsXnDr5clc57bdqLUr0j8fQJUTnJGxBm73vdId+9x3adL
+4FKeED+DzSu5sNXbnNpgAQKBgQC4AQbEP4HKRI0T31B6bmp7ThqlVzDNiW9PJpqe
+RJjziSB5TWQfXoZJZQPO8eAaSQFcUTYqeiahXrAq93511LmCZdFapbw1sKKVsbns
+qe7r3Y1/82ejCJ3XA5cg/uCJWZrd5C8w9CxVc4JhL61RQIcapK+6C+8LWNN1LQq2
+IMNV3QKBgDOCDROFz0nZEyh5a/Z6g2IUZzE0clrDZeYBeOBhmeTIrGO3+5kKhWeT
+a5sCXNJ5MgU2W/awBgS7Bzhus62CumRAjnqBv2Wo07nvtEB4T3njlJ9NGExjcYsd
+mKDSotc4Gcixs/MwZaFNdzqtKp6SO1pEwxeBrjhLzBvKsRntijxZ
+-----END RSA PRIVATE KEY-----
+</value>
+      </configitem>
+      <configitem name = "Certificate">
+         <value>-----BEGIN CERTIFICATE-----
+MIIDWzCCAkOgAwIBAgIJAO9GjPt2LvbFMA0GCSqGSIb3DQEBDQUAMEQxCzAJBgNV
+BAYTAlVTMQswCQYDVQQIDAJDQTELMAkGA1UEBwwCSVIxDTALBgNVBAoMBExUUlgx
+DDAKBgNVBAsMA1BBVDAeFw0xNzEwMTAxNjA4NDBaFw0xODEwMTAxNjA4NDBaMEQx
+CzAJBgNVBAYTAlVTMQswCQYDVQQIDAJDQTELMAkGA1UEBwwCSVIxDTALBgNVBAoM
+BExUUlgxDDAKBgNVBAsMA1BBVDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBALtuqc/15PMXB0e7K9XAUBHci8nzU4oGSwKGxfQrwI+krsr2f+SBbsru8P67
+BarUVs1+0dz3AecjuGI3KO5qoUsBglShV09zvBbhb/4eqRj+CqYhXMreQAB0TD7E
+j/zO/LW2+JrpNpSKz8UpiW+sfHNtvwn5XgCztbVYo6B06vutzmnPmQ1pId5qZZ3U
+VnnnY76j9qvE1PyAc36cNIP16/fZYNJcm2fdisCUwuS38/yXP4zrj2tEju7thiSX
+19l3NLuHN+rUuoV43RJcMc2x/DgWUHIFT9TKF/rksLhHNDLI5R2xRgkJhlweznL9
+zxtyIsSOS59uZixe/Vg+IZc6SJsCAwEAAaNQME4wHQYDVR0OBBYEFKzJ4fu6jCeY
+RF5albK/0LXW1QHLMB8GA1UdIwQYMBaAFKzJ4fu6jCeYRF5albK/0LXW1QHLMAwG
+A1UdEwQFMAMBAf8wDQYJKoZIhvcNAQENBQADggEBAAYE27WQAPDyCyxx2cXHVBD1
+V/kI/+ILPqNaMpuyaQw98UbP59mTypCIaezoKX+UPt8/p/35megd1zNiqLDmpJZ8
+bmFooj05QSVNiyBuSRvGJRdim/VuX31blu40oT2mBtkrbhV+9Gq33r8bqIXAQ+KD
+2nm9sV1e6KyngROvgZejdFZmAK0s+sIDBX/ZeOZMTKC37c+B21XfnkIM0fB4tuHO
+q69qmiLOsLLt80D6Vmc4Lf6sFWp7vrWdAm2W7Qj2jULsn22EXknHcFidaMrH0z2o
+49+/IS5afJjUGnAu7X7dqXzKnbPz44sC1EfqN3ntucZKf3jA2aHHo9w8i/m049o=
+-----END CERTIFICATE-----</value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "1">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "2">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "3">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "1">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "2">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "3">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "4">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "5">
+         <value name = "Certificate"></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "Tunnel Accept" instance = "1">
+      <configitem name = "Mode">
+         <value>Always</value>
+      </configitem>
+      <configitem name = "Local Port">
+         <value>10006</value>
+      </configitem>
+      <configitem name = "Protocol">
+         <value>TLS</value>
+      </configitem>
+      <configitem name = "Credential">
+         <value>tls</value>
+      </configitem>
+      <configitem name = "Flush Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Network">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Password">
+         <value></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "Tunnel Accept" instance = "Virtual_1">
+      <configitem name = "Mode">
+         <value>Always</value>
+      </configitem>
+      <configitem name = "Local Port">
+         <value>&lt;None&gt;</value>
+      </configitem>
+      <configitem name = "Protocol">
+         <value>TCP</value>
+      </configitem>
+      <configitem name = "Flush Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Network">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Password">
+         <value></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "Tunnel Accept" instance = "Virtual_2">
+      <configitem name = "Mode">
+         <value>Always</value>
+      </configitem>
+      <configitem name = "Local Port">
+         <value>&lt;None&gt;</value>
+      </configitem>
+      <configitem name = "Protocol">
+         <value>TCP</value>
+      </configitem>
+      <configitem name = "Flush Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Line">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Block Network">
+         <value>Disabled</value>
+      </configitem>
+      <configitem name = "Password">
+         <value></value>
+      </configitem>
+   </configgroup>
+</configrecord>
+

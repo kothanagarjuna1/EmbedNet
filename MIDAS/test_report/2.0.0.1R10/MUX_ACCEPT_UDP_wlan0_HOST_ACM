@@ -1,0 +1,15 @@
+Test MUX
+=========
+wlan0
+configure device
+Rebooting
+configuring device
+line host_acm
+end of device configuration
+testing mux
+mux udp tests begin
+out is 1
+1496KKK
+udp recv is 1
+vut received data
+TEST CASE PASSED

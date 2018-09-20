@@ -1,0 +1,49 @@
+2018-07-27 10:44:16	 Test File system commands and Web API
+2018-07-27 10:44:16	 =====================================
+2018-07-27 10:44:16	 configure device
+2018-07-27 10:44:16	 enabled telnet ........
+2018-07-27 10:44:16	 device is rebooting
+2018-07-27 10:44:16	 format fs
+Traceback (most recent call last):
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py", line 658, in <module>
+    main()
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py", line 650, in main
+    fs = filesystemCommands()
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py", line 82, in filesystemCommands
+    formatFilesystem()
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py", line 60, in formatFilesystem
+    format_complete = clientid.expect(['The file system has been formatted.'])
+  File "/usr/lib/python2.7/dist-packages/pexpect/spawnbase.py", line 315, in expect
+    timeout, searchwindowsize, async)
+  File "/usr/lib/python2.7/dist-packages/pexpect/spawnbase.py", line 339, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python2.7/dist-packages/pexpect/expect.py", line 102, in expect_loop
+    return self.eof(e)
+  File "/usr/lib/python2.7/dist-packages/pexpect/expect.py", line 49, in eof
+    raise EOF(msg)
+pexpect.exceptions.EOF: End Of File (EOF). Exception style platform.
+<pexpect.pty_spawn.spawn object at 0x7f9701e7a9d0>
+command: /usr/bin/telnet
+args: ['/usr/bin/telnet', '192.168.51.133']
+searcher: None
+buffer (last 100 chars): ''
+before (last 100 chars): '\nstatus\r\n\r\nfile system\r\n\r\nformat\r\ntelnet: Unable to connect to remote host: No route to host\r\nokay\r\n'
+after: <class 'pexpect.exceptions.EOF'>
+match: None
+match_index: None
+exitstatus: 1
+flag_eof: True
+pid: 26359
+child_fd: 7
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1

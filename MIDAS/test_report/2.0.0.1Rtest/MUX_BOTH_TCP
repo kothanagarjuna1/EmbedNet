@@ -1,0 +1,316 @@
+Test MUX
+=========
+configure device
+Rebooting
+configuring device
+end of device configuration
+testing mux
+Test MUX TCP Connect And Accept
+Test Mux connect instance 1
+serial opened
+test case 1: mux receive
+connect to remote host
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+connected by ('192.168.51.161', 62311)
+sending
+waiting for receiving event/data
+send data
+check whether is data waiting
+data is waiting. received 1r
+read and check data
+serdata Kabcde
+reading data from serial
+data read from serial
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+.
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is abcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 12345678
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+Test mux connect and accept instance 1
+Test mux accept instance 1
+check listening sockets
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+K
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+123
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is KKKabcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 1
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+mux connect and accept instance 1 passed
+Test mux connect and accept instance 2
+Test mux connect instance 2
+test case 1: mux receive
+connect to remote host
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+connected by ('192.168.51.161', 61074)
+sending
+waiting for receiving event/data
+send data
+check whether is data waiting
+data is waiting. received 2r
+read and check data
+serdata Kabcde
+reading data from serial
+data read from serial
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+.
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is abcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 12345678
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+Test mux connect and accept instance 2
+Test mux accept instance 2
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+K
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+123
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is KKKabcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 1
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+mux connect and accept instance 2 passed
+Test mux connect and accept instance 3
+Test mux connect instance 3
+test case 1: mux receive
+connect to remote host
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+connected by ('192.168.51.161', 61507)
+sending
+waiting for receiving event/data
+send data
+check whether is data waiting
+data is waiting. received 3r
+read and check data
+serdata Kabcde
+reading data from serial
+data read from serial
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+.
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is abcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 12345678
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+Test mux connect and accept instance 3
+Test mux accept instance 3
+check listening sockets
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+K
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+123
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is KKKabcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 1
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+mux connect and accept instance 3 passed
+Test mux connect and accept instance 4 
+Test mux connect instance 4
+test case 1: mux receive
+connect to remote host
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+connected by ('192.168.51.161', 56885)
+sending
+waiting for receiving event/data
+send data
+check whether is data waiting
+data is waiting. received 4r
+read and check data
+serdata Kabcde
+reading data from serial
+data read from serial
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+.
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is abcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 12345678
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+Test mux connect and accept instance 4
+Test mux accept instance 4
+check listening sockets
+verify connection
+connection established. received K
+test case: tcp mux receive passed
+test case 2: send and push Hex data
+initiate hex data send
+K
+hex data send initiated
+send data
+data sent
+push data from mux and verify remote host receives data
+123
+data received
+test case: hex data send passed
+test case 3: read binary data
+binary data read initiated
+binary data sent
+data read from serial is KKKabcd
+test case: binary data receive passed
+test case 4: send binary data and end the connection
+binary data send initiated
+data sent
+push the data
+data received 1
+test case: send binary passed
+muxrec_result is  1
+hexsend_result is 1
+sendbinary_result is 1
+readbinary_result is 1
+mux connect and accept instance 4 passed
+end connection
+end connection1
+end connection2
+end connection3
+end connection4
+end connection5
+end connection6
+end connection7
+end connection8
+connection ended
+mux tcp connect and accept mode test case passed
+result is 1
+MUX tcp 8 instances TEST CASE PASSED

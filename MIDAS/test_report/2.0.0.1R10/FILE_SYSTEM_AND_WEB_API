@@ -1,0 +1,160 @@
+2018-08-15 06:44:55	 Test File system commands and Web API
+2018-08-15 06:44:55	 =====================================
+2018-08-15 06:44:55	 configure device
+2018-08-15 06:44:55	 enabled telnet ........
+2018-08-15 06:44:55	 device is rebooting
+2018-08-15 06:44:55	 format fs
+2018-08-15 06:44:55	 file system formatted
+2018-08-15 06:44:55	 test file system commands through CLI
+create recursive dir
+2018-08-15 06:44:55	 change dir
+recursive dir successfully created. max dir depth is 5
+2018-08-15 06:44:55	 create long path name
+upload file
+2018-08-15 06:44:55	 remove file
+2018-08-15 06:44:55	 file removal successful
+2018-08-15 06:44:55	 remove dir
+2018-08-15 06:44:55	 max length dir removed successfully
+2018-08-15 06:44:55	 upload file
+2018-08-15 06:44:55	 file upload was successful
+2018-08-15 06:44:55	 append data to a file
+2018-08-15 06:44:55	 data appended to existing file
+2018-08-15 06:44:55	 file stat
+2018-08-15 06:44:55	 file stat is correct
+2018-08-15 06:44:55	 copy file
+2018-08-15 06:44:55	 file successfully copied
+2018-08-15 06:44:55	 move file
+2018-08-15 06:44:55	 file successfully replaced
+2018-08-15 06:44:55	 delete file
+2018-08-15 06:44:55	 file deleted successfully
+tc is 1
+2018-08-15 06:44:55	 Filesystem commands test case passed
+2018-08-15 06:44:55	 format fs
+2018-08-15 06:44:55	 file system formatted
+2018-08-15 06:44:55	 test filesystem webAPI - this test uses file system webAPI to manipulate the files and directories without the need for browser using curl command.Four principal HTTP requests are implemented by the API: GET, PUT, MKCOL, and DELETE.
+2018-08-15 06:44:55	 test case 1:HTTP GET
+dir is /embedded
+2018-08-15 06:44:55	 dir found
+2018-08-15 06:44:55	 test case 2:HTTP PUT
+2018-08-15 06:44:55	 uploading file...
+file is  100ktext.dat
+file size is  102400
+2018-08-15 06:44:55	 file uploaded successfully
+2018-08-15 06:44:55	 test case 3: create a dir MKCOL
+dir1
+2018-08-15 06:44:55	 directory successfully created
+409 Directory exists
+2018-08-15 06:44:55	 directory already exists
+2018-08-15 06:44:55	 test case 4: delete file DEL
+2018-08-15 06:44:55	 file is deleted
+2018-08-15 06:44:55	 test case 5: export status group
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE statusrecord [
+   <!ELEMENT statusrecord (statusgroup+)>
+   <!ELEMENT statusgroup (statusitem+,statusgroup*)>
+   <!ELEMENT statusitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST statusrecord version CDATA #IMPLIED>
+   <!ATTLIST statusgroup name CDATA #IMPLIED>
+   <!ATTLIST statusgroup instance CDATA #IMPLIED>
+   <!ATTLIST statusitem name CDATA #IMPLIED>
+   <!ATTLIST statusitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<statusrecord version = "0.1.0.1">
+   <statusgroup name = "Device">
+      <statusitem name = "Product Type">
+         <value>xPico240</value>
+      </statusitem>
+      <statusitem name = "Product ID">
+         <value>Y2</value>
+      </statusitem>
+      <statusitem name = "Product SKU">
+         <value>XPC240100</value>
+      </statusitem>
+      <statusitem name = "Antenna">
+         <value>U.FL</value>
+      </statusitem>
+      <statusitem name = "Serial Number">
+         <value>0080A3B787E1</value>
+      </statusitem>
+      <statusitem name = "Configuration Version">
+         <value>[unversioned]</value>
+      </statusitem>
+      <statusitem name = "Configuration Modified">
+         <value>Yes</value>
+      </statusitem>
+      <statusitem name = "Firmware Version">
+         <value>2.0.0.1R10</value>
+      </statusitem>
+      <statusitem name = "Active Partition">
+         <value>1</value>
+      </statusitem>
+      <statusitem name = "Build Date">
+         <value>Aug 14 2018 (13:23:27)</value>
+      </statusitem>
+      <statusitem name = "Bootloader Version">
+         <value>1.2.0.0R2</value>
+      </statusitem>
+      <statusitem name = "Bootloader Date">
+         <value>Oct  6 2017 07:40:38</value>
+      </statusitem>
+      <statusitem name = "Uptime">
+         <value>7 minutes 34 seconds</value>
+      </statusitem>
+      <statusitem name = "Permanent Config">
+         <value>Saved</value>
+      </statusitem>
+   </statusgroup>
+</statusrecord>
+
+2018-08-15 06:44:55	 status group successfully exported
+2018-08-15 06:44:55	 test case 6: take status action
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE function [
+   <!ELEMENT function (return)>
+   <!ELEMENT return (result,message+)>
+   <!ELEMENT result (#PCDATA)>
+   <!ELEMENT message (#PCDATA)>
+   <!ATTLIST function version CDATA #IMPLIED>
+]>
+<function version = "0.1.0.0">
+   <return>
+      <message>Requesting DHCP lease renewal.</message>
+      <result>Succeeded</result>
+   </return>
+</function>
+
+2018-08-15 06:44:55	 wlan0 dhcp lease renewed
+2018-08-15 06:44:55	 test case 7: import xml
+2018-08-15 06:44:55	 xml import successful
+2018-08-15 06:44:55	 soft AP changed successfully
+2018-08-15 06:44:55	 file system API test case passed.All the supported API's verified
+1
+2018-08-15 06:44:55	 Test Case: Set Clock Manually
+2018-08-15 06:44:55	 clock set successfully
+2018-08-15 06:44:55	 Test Case:Action Save
+2018-08-15 06:44:55	 clock source set successfully
+2018-08-15 06:44:55	 Test Case:Action Sync
+2018-08-15 06:44:55	 synchronised with NTP server
+2018-08-15 06:44:55	 Test Case: Kill Outgoing Tunnel Connection
+aaaaaaaaaaaaaaaaaaNone
+bbbbbbbbbbbbbbbbbbNone
+2018-08-15 06:44:55	 tunnel is active. kill active tunnel outgoing connection
+2018-08-15 06:44:55	 tunnel outgoing connection is killed
+2018-08-15 06:44:55	 tunnel outgoing connection is not active
+2018-08-15 06:44:55	 Test Case:Kill Incoming Tunnel Connection
+2018-08-15 06:44:55	 tunnel is active. kill active tunnel incoming connection
+2018-08-15 06:44:55	 Test Case:Line Receive
+2018-08-15 06:44:55	 line receive picks up characters
+2018-08-15 06:44:55	 line picks up hex characters
+2018-08-15 06:44:55	 Test Case:Line Transmit
+2018-08-15 06:44:55	 line transmitted characters successfully
+2018-08-15 06:44:55	 line transmitted hex characters successfully
+2018-08-15 06:44:55	 Test Case:Action Reboot
+2018-08-15 06:44:55	 ping to check whether device is online
+2018-08-15 06:44:55	 device is not online.rebooting...
+2018-08-15 06:44:55	 web api action commands test passed
+2018-08-15 06:44:55	 WEB API TEST CASE PASSED

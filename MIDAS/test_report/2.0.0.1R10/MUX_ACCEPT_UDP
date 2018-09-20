@@ -1,0 +1,14 @@
+Test MUX
+=========
+configure device
+Rebooting
+configuring device
+end of device configuration
+testing mux
+result is
+Traceback (most recent call last):
+  File "/home/lantronix/MIDAS/scripts/mux8tcp.py", line 4283, in <module>
+    device_config(tunnel_port)
+  File "/home/lantronix/MIDAS/scripts/mux8tcp.py", line 4276, in device_config
+    print "result is", result
+UnboundLocalError: local variable 'result' referenced before assignment

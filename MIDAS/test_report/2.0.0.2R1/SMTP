@@ -1,0 +1,12 @@
+2018-08-28 06:08:53	 Test SMTP
+2018-08-28 06:08:53	 =========
+Test smtp.live.com
+send email
+2018-08-28 06:08:53	 email successfully sent
+Test smtp.gmail.com
+send email
+2018-08-28 06:08:53	 email successfully sent
+Test smtp.mail.yahoo.com
+send email
+2018-08-28 06:08:53	 email successfully sent
+TEST CASE PASSED

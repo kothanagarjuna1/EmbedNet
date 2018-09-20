@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE configrecord [
+   <!ELEMENT configrecord (configgroup+)>
+   <!ELEMENT configgroup (configitem+)>
+   <!ELEMENT configitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST configrecord version CDATA #IMPLIED>
+   <!ATTLIST configgroup name CDATA #IMPLIED>
+   <!ATTLIST configgroup instance CDATA #IMPLIED>
+   <!ATTLIST configitem name CDATA #IMPLIED>
+   <!ATTLIST configitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<configrecord version = "0.1.0.1">
+   <configgroup name = "AES Credential" instance = "aes">
+      <configitem name = "Encrypt Key">
+         <value>11111111111111111111111111111111</value>
+      </configitem>
+      <configitem name = "Decrypt Key">
+         <value>11111111111111111111111111111111</value>
+      </configitem>
+   </configgroup>
+</configrecord>
+

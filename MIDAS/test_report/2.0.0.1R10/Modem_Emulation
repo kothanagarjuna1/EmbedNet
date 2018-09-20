@@ -1,0 +1,40 @@
+Test Modem Emulation
+====================
+Rebooting
+connection killed
+automatic
+test incoming connection automatic
+test case: modem emulation inbound connection
+../5ktext.dat
+sending data from network to serial...
+sending data from serial to network...
+data sent through the tunnel
+check data received
+5120
+5120
+5144
+data sent through the tunnel
+modem emul inbound connection passed automatic
+Rebooting
+connection killed
+manual
+test incoming connection manual
+test case: modem emulation inbound connection
+../5ktext.dat
+sending data from network to serial...
+sending data from serial to network...
+data sent through the tunnel
+check data received
+5120
+5120
+5149
+data sent through the tunnel
+modem emul inbound connection passed manual
+serial opened
+test case: modem emulation commands
+1
+response OK
+test case:  modem emulation outbound connection
+0
+connection successful
+modem emul tunnel outbound connection TEST CASE PASSED

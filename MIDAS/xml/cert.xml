@@ -1,0 +1,158 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- Automatically generated XML -->
+<!DOCTYPE configrecord [
+   <!ELEMENT configrecord (configgroup+)>
+   <!ELEMENT configgroup (configitem+)>
+   <!ELEMENT configitem (value+)>
+   <!ELEMENT value (#PCDATA)>
+   <!ATTLIST configrecord version CDATA #IMPLIED>
+   <!ATTLIST configgroup name CDATA #IMPLIED>
+   <!ATTLIST configgroup instance CDATA #IMPLIED>
+   <!ATTLIST configitem name CDATA #IMPLIED>
+   <!ATTLIST configitem instance CDATA #IMPLIED>
+   <!ATTLIST value name CDATA #IMPLIED>
+]>
+<configrecord version = "0.1.0.1">
+   <configgroup name = "TLS Credential" instance = "client">
+      <configitem name = "Protocols">
+         <value>TLS1.0, TLS1.1, TLS1.2</value>
+      </configitem>
+      <configitem name = "Private Key">
+         <value>-----BEGIN RSA PRIVATE KEY-----
+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
+-----END RSA PRIVATE KEY-----
+</value>
+      </configitem>
+      <configitem name = "Certificate">
+         <value>-----BEGIN CERTIFICATE-----
+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
+-----END CERTIFICATE-----
+</value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "1">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "2">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Higher Authority" instance = "3">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "1">
+         <value name = "Certificate">
+</value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "2">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "3">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "4">
+         <value name = "Certificate"></value>
+      </configitem>
+      <configitem name = "Trusted Authority" instance = "5">
+         <value name = "Certificate"></value>
+      </configitem>
+   </configgroup>
+   <configgroup name = "HTTP Server">
+      <configitem name = "Mode">
+         <value>Enabled</value>
+      </configitem>
+      <configitem name = "Port">
+         <value>80</value>
+      </configitem>
+      <configitem name = "Secure Port">
+         <value>443</value>
+      </configitem>
+      <configitem name = "Secure Credential">
+         <value>client</value>
+      </configitem>
+      <configitem name = "Authentication Timeout">
+         <value>30 minutes</value>
+      </configitem>
+      <configitem name = "Inactivity Timeout">
+         <value>5 minutes</value>
+      </configitem>
+   </configgroup>
+</configrecord>
+

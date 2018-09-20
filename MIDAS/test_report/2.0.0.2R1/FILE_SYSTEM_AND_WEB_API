@@ -1,0 +1,26 @@
+2018-08-28 06:06:04	 Test File system commands and Web API
+2018-08-28 06:06:04	 =====================================
+2018-08-28 06:06:04	 configure device
+2018-08-28 06:06:04	 enabled telnet ........
+2018-08-28 06:06:04	 device is rebooting
+2018-08-28 06:06:04	 format fs
+2018-08-28 06:06:04	 file system formatted
+2018-08-28 06:06:04	 test file system commands through CLI
+create recursive dir
+2018-08-28 06:06:04	 change dir
+recursive dir successfully created. max dir depth is 5
+2018-08-28 06:06:04	 create long path name
+upload file
+2018-08-28 06:06:04	 remove file
+2018-08-28 06:06:04	 file removal successful
+2018-08-28 06:06:04	 remove dir
+2018-08-28 06:06:04	 max length dir removed successfully
+2018-08-28 06:06:04	 upload file
+Traceback (most recent call last):
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py", line 659, in <module>
+    main()
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py", line 651, in main
+    fs = filesystemCommands()
+  File "/home/lantronix/MIDAS/scripts/fswebapi.py", line 139, in filesystemCommands
+    f = open("+script_path+"'100ktext.dat','r')
+IOError: [Errno 2] No such file or directory: '+script_path+100ktext.dat'

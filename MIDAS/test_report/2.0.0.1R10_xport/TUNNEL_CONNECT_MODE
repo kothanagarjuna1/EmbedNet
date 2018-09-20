@@ -1,0 +1,46 @@
+2018-08-16 13:21:42 	 Test Tunnel Connect Modes
+2018-08-16 13:21:42 	 =========================
+2018-08-16 13:21:42 	 Rebooting
+2018-08-16 13:22:37 	 serial opened
+2018-08-16 13:22:47 	 test tunnel sequential mode
+2018-08-16 13:22:52 	 connected by ('192.168.51.203', 62222)
+2018-08-16 13:22:52 	 sending from network
+2018-08-16 13:23:07 	 serial data ser1 is []
+2018-08-16 13:23:07 	 receving from network
+2018-08-16 13:23:07 	 data is hela
+2018-08-16 13:24:12 	 2nd TRY
+2018-08-16 13:24:12 	 connected by ('192.168.51.203', 60892)
+2018-08-16 13:24:12 	 sending from network
+2018-08-16 13:24:32 	 serial data ser2 []
+2018-08-16 13:24:32 	 receiving from network
+2018-08-16 13:25:32 	 data1 is hela
+2018-08-16 13:25:32 	 result is 0
+2018-08-16 13:25:32 	 Tunnel Connect Sequential Failed
+2018-08-16 13:25:32 	 Rebooting
+2018-08-16 13:26:26 	 serial opened
+2018-08-16 13:26:36 	 test tunnel simultaneous mode
+2018-08-16 13:26:36 	 connected by ('192.168.51.203', 49932)
+2018-08-16 13:26:36 	 connected by ('192.168.51.203', 55150)
+2018-08-16 13:26:36 	 sending from network
+2018-08-16 13:27:06 	 serial data ser1 []
+2018-08-16 13:28:06 	 data is hela
+2018-08-16 13:28:06 	 data1 is hela
+2018-08-16 13:28:06 	 result is 0
+2018-08-16 13:28:06 	 Tunnel Connect Simultaneous Failed
+2018-08-16 13:28:07 	 Rebooting
+2018-08-16 13:29:01 	 serial opened
+2018-08-16 13:29:11 	 test tunnel round-robin mode
+2018-08-16 13:29:11 	 connected by ('192.168.51.203', 51054)
+2018-08-16 13:29:11 	 sending from network
+2018-08-16 13:29:21 	 serial data ser2 []
+2018-08-16 13:29:21 	 receiving from network
+2018-08-16 13:29:21 	 data1 is hela
+2018-08-16 13:30:26 	 2nd TRY
+2018-08-16 13:30:36 	 connected by ('192.168.51.203', 56196)
+2018-08-16 13:30:36 	 sending from network
+2018-08-16 13:30:46 	 serial data ser1 []
+2018-08-16 13:30:46 	 receiving from network
+2018-08-16 13:30:46 	 data is hela
+2018-08-16 13:31:46 	 result is 0
+2018-08-16 13:31:46 	 Tunnel Connect Round-Robin Failed
+2018-08-16 13:31:46 	 Tunnel Connect TEST CASE PASSED
